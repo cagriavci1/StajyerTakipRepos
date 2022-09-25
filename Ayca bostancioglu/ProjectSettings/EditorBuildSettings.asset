@@ -4,5 +4,11 @@
 EditorBuildSettings:
   m_ObjectHideFlags: 0
   serializedVersion: 2
-  m_Scenes: []
+  m_Scenes:
+  - enabled: 1
+    path: Assets/SimpleCalculator/Scenes/MySimpleCalculator.unity
+    guid: 2995691a72a1d064b81a74a023334af5
+  - enabled: 1
+    path: Assets/SimpleCalculator/Scenes/hesap.unity
+    guid: 426e471a4dec7c540bd5316de36875e0
   m_configObjects: {}

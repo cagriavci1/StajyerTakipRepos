@@ -1,5 +1,9 @@
 sceneSetups:
+<<<<<<< HEAD
 - path: Assets/SimpleCalculator/Scenes/MySimpleCalculator.unity
+=======
+- path: Assets/SimpleCalculator/Scenes/hesap.unity
+>>>>>>> a4953a74b199814ecf60f9f5d7fb0b47fd734def
   isLoaded: 1
   isActive: 1
   isSubScene: 0

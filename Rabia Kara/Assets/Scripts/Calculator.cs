@@ -2,6 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using TMPro;
+using UnityEngine.UI;
 
 public class Calculator : MonoBehaviour
 {
@@ -10,21 +11,22 @@ public class Calculator : MonoBehaviour
      private float input1;
      public TextMeshProUGUI InputText;
      private string operation;
-
+    
 
       public void ClickNumber(int val)
     {
-        Debug.Log(message:$" check val: {val}");
-        InputText.text = $"{val}";
-        if(input == 0)
-        {
-          input = val;
-        }
-        else
-        {
-            input1 = val;
-        }
-       
+         Debug.Log(message:$" check val: {val}");
+         InputText.text = $"{val}";
+         if(input == 0)
+         {
+           input = val;
+         }
+         else
+         {
+             input1 = val;
+         }
+        
+
     }  
 
       public void ClickOperation(string val)
@@ -33,9 +35,9 @@ public class Calculator : MonoBehaviour
         operation = val;
     }
 
-       public void ClickEqual(string val)
+      public void ClickEqual(string val)
     {
-        Debug.Log(message:$" ClickEqual val: {val}");
+       Debug.Log(message:$" ClickEqual val: {val}");
         if(input !=0 && input1 !=0 && !string.IsNullOrEmpty(operation))
         {
             switch (operation)
@@ -53,11 +55,14 @@ public class Calculator : MonoBehaviour
             sonuc = input / input1;
             break;
             }
-        InputText.SetText(sonuc.ToString());
-        ClearInput();
+            InputText.SetText(sonuc.ToString());
+            
+              
+      ClearInput();
         }
     
     }
+
     public void ClickPeriod(string val)
     {
         Debug.Log(message:$" ClickPeriod val: {val}");
@@ -67,6 +72,7 @@ public class Calculator : MonoBehaviour
         input = 0;
         input1 = 0;
     }
+    
 
-   
+
 }
